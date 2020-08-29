@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Site de teste CSS</title>
+        <style>
+            p{ /*Seletor por elemento*/
+                text-align: center;
+                color: red;
+            }
+
+            #p1 { /*Seletor por identificador*/
+                background-color: blue;
+            }
+
+            .center { /*Seletor por classe*/
+                text-align: center;
+                color: green;
+            }
+
+            p.center { /*Seletor por elemento mais classe*/
+                text-align: right;
+                background-color: yellow;
+            }
+
+            a[target] { /*Seletor por atributos específicos*/
+                background-color: grey;  
+            }
+
+            a[target="_self"] { /*Seletor por valores de atributos*/
+                text-aling: right;
+                color: green;
+            }
+
+            a:link { /*Link não visitado*/
+                color: #FF0000;
+            }
+
+            a:visited { /*Link visitado*/
+                color: #00FF00:
+            }
+
+            a:hover { /*Rato por cima do link*/
+                color: #FF00FF;
+            }
+
+            a:active { /*Link selecionado*/
+                color: #0000FF;
+            }
+
+            p::first-letter {
+                color: #FF0000;
+                font-size: xx-large;
+            }
+
+            .container {
+                flex-direction: row-reverse;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>Isto é para testar o css</p>
+
+        <h1 id="p1">Olá Mundo</h1>
+        <h2 id="p2">Olá, Portugal</h2>
+
+        <h1 class="center">Isto é um h1</h1>
+        <p class="center">E isto é um parágrafo, com a mesma que classe que o h1 a cima</p>
+
+        <a href="https://www.youtube.com/watch?v=unfmzc0opk4" target="_blank">Link para o melhor vídeo do mundo</a>
+        <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_self">Para aprenderes qualquer coisa</a>
+        <a href="https://www.w3schools.com/tags/att_a_target.asp">Só para testar os links</a><br>
+
+        <p>Testar os pseudoelementos</p>
+
+        <div class="container">
+            <div><p>Primeiro</p></div>
+            <div><p>Segundo</p></div>
+        </div>
+    </body>
+</html>
